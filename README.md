@@ -82,7 +82,7 @@ La idea principal es una aplicación en donde uno entra y obtiene un listado de 
 Cuenta con validación a la hora de agregar o editar los datos y notifica al usuario cuando estos cambios ocurren de manera correcta.
 
 ## Decisiones de Diseño
-Desarrollé componentes reutilizables en su mayoría, para poder aprovechar principios cono DRY (No repetir código). Trate de hacer los componentes lo más atómicos posibles para poder generar un código más cohesivo y mantenible.
+Desarrollé componentes reutilizables en su mayoría, para poder aprovechar principios como DRY (No repetir código). Trate de hacer los componentes lo más atómicos posibles para poder generar un código más cohesivo y mantenible.
 
 En cuanto a los estilos, utilicé un Theme que provee react-native-paper para aprovechar su esquema, y fui modificando los estilos según necesite. Los componentes los estilé con StyleSheet.
 
