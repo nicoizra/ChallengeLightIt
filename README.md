@@ -1,4 +1,4 @@
-# Challenge React Native - Light It
+# Challenge React Native - ⚡ Light It
 
 Aplicación Front-End para manejar la información de pacientes.
 
