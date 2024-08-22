@@ -10,6 +10,7 @@ interface Props {
 const UserAvatar = ({ avatarUrl, width }: Props) => {
   const [imageSrc, setImageSrc] = useState({ uri: avatarUrl });
 
+  // En caso de no poder mostar la imagen, se va a mostrar una imagen default que está en nuestro directorio
   return (
     <Image
       style={[styles.avatar, { width }]}
