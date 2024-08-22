@@ -98,6 +98,3 @@ Para diseñar la App, previamente decidí armar unos wireframes de cómo sería 
 
 ### Wireframes:
 ![Wireframes](./src/assets/img/Wireframes.png)
-
-
-

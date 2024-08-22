@@ -1,5 +1,5 @@
-import { Image, Linking, StyleSheet, View } from 'react-native';
-import React, { useState } from 'react';
+import { Linking, StyleSheet, View } from 'react-native';
+import React from 'react';
 import { Patient } from '../types';
 import { theme } from '../theme';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
@@ -7,6 +7,7 @@ import CustomText from './CustomText';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { TouchableOpacity } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';
+import UserAvatar from './UserAvatar';
 
 interface Props {
   patient: Patient;
@@ -15,16 +16,11 @@ interface Props {
 }
 
 const PatientCard = ({ patient, onPress, index }: Props) => {
-  const [imageUrl, setImageUrl] = useState({ uri: patient.avatar });
-
   return (
     <Animated.View key={index.toString()} entering={FadeIn}>
       <TouchableOpacity style={[styles.container, styles.shadow]} onPress={onPress}>
-        <Image
-          onError={() => setImageUrl(require('../assets/img/avatar.jpg'))}
-          style={styles.avatar}
-          source={imageUrl}
-        />
+        <UserAvatar width={wp(15)} avatarUrl={patient.avatar} />
+
         <View style={styles.textContainer}>
           <CustomText size="16">{patient.name}</CustomText>
           <TouchableOpacity
@@ -53,11 +49,6 @@ const PatientCard = ({ patient, onPress, index }: Props) => {
 export default PatientCard;
 
 const styles = StyleSheet.create({
-  avatar: {
-    width: wp(15),
-    aspectRatio: 1,
-    borderRadius: theme.roundness,
-  },
   container: {
     width: '100%',
     flexDirection: 'row',
