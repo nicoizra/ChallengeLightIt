@@ -77,12 +77,14 @@ yarn ios
 > Tras ejecutar estos comandos, la App debería mostrarse en el emulador sin problemas. Para ejecutarlo en iOS, en el package.json se puede modificar el script "ios", para elegir el emulador sobre el que se va a ejecutar.
 
 ## Uso
-La idea principal es una aplicación en donde uno entra y obtiene un listado de pacientes con sus datos de un API. Luego puede editarlos o cargar nuevos en caso que sea necesario. 
+
+La idea principal es una aplicación en donde uno entra y obtiene un listado de pacientes con sus datos de un API. Luego puede editarlos o cargar nuevos en caso que sea necesario.
 
 Cuenta con validación a la hora de agregar o editar los datos y notifica al usuario cuando estos cambios ocurren de manera correcta.
 
 ## Decisiones de Diseño
-Desarrollé componentes reutilizables en su mayoría, para poder aprovechar principios como DRY (No repetir código). Trate de hacer los componentes lo más atómicos posibles para poder generar un código más cohesivo y mantenible.
+
+Desarrollé componentes reutilizables en su mayoría, para poder aprovechar principios como DRY (No repetir código). Trate de hacer los componentes lo más atómicos posibles para poder generar un código más cohesivo y mantenible (SOLID: Single Responsibility).
 
 En cuanto a los estilos, utilicé un Theme que provee react-native-paper para aprovechar su esquema, y fui modificando los estilos según necesite. Los componentes los estilé con StyleSheet.
 
@@ -97,4 +99,5 @@ El código está tipado con TypeScript para generar una mayor legibilidad y que 
 Para diseñar la App, previamente decidí armar unos wireframes de cómo sería visualmente. Esto me permitió ahorrar tiempo y tener una visión más clara de lo que estaba buscando lograr.
 
 ### Wireframes:
+
 ![Wireframes](./src/assets/img/Wireframes.png)
