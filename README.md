@@ -7,7 +7,7 @@ Aplicación Front-End para manejar la información de pacientes.
 1. [Instalación](#instalación)
 2. [Uso](#uso)
 3. [Decisiones de Diseño](#decisiones-de-diseño)
-4. [Wireframes](#herramientas-y-librerías)
+4. [Wireframes](#wireframes)
 
 ## Instalación
 
